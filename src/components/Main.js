@@ -7,7 +7,7 @@ let imageDatas = require('../data/imageDatas.json');
 //利用自执行函数，将图片名信息转成图片URL路径信息
 
 imageDatas = ((imageDatasArr) => {
-  for (var i = 0, j = imageDatasArr.length; i < j; i++) {
+  for (var i = 0, len = imageDatasArr.length; i < len; i++) {
     let singleImageData = imageDatasArr[i];
     singleImageData.imageURL = require('../images/' + singleImageData.fileName);
     imageDatasArr[i] = singleImageData;
